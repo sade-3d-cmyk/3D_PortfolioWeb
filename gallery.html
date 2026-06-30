@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Galería | Portfolio 3D</title>
+    <!-- Vincula los estilos del sitio -->
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- Mismo encabezado para mantener la navegación consistente -->
     <header class="site-header">
       <a class="brand" href="index.html">Sebastián</a>
       <nav class="site-nav">
@@ -17,6 +19,7 @@
       </nav>
     </header>
 
+    <!-- Contenido de la página de galería -->
     <main class="page-shell">
       <section class="page-intro">
         <p class="eyebrow">Galería</p>
@@ -24,26 +27,34 @@
         <p>Esta sección te permitirá organizar tus mejores imágenes y mostrar la evolución de tus piezas.</p>
       </section>
 
-      <section class="grid">
-        <article class="card">
-          <h3>Proyecto 01</h3>
+      <!-- Grid de tarjetas de proyectos; cada una es un enlace a una página de detalle -->
+      <section class="grid project-grid">
+        <a class="card project-card" href="project-01.html">
+          <span class="card-tag">Proyecto 01</span>
+          <h3>Interior atmosférico</h3>
           <p>Describe aquí el concepto, la técnica y el objetivo visual del render.</p>
-        </article>
-        <article class="card">
-          <h3>Proyecto 02</h3>
+          <span class="card-link">Ver proyecto →</span>
+        </a>
+        <a class="card project-card" href="project-02.html">
+          <span class="card-tag">Proyecto 02</span>
+          <h3>Producto premium</h3>
           <p>Añade una segunda pieza para comenzar a construir tu portafolio.</p>
-        </article>
-        <article class="card">
-          <h3>Proyecto 03</h3>
+          <span class="card-link">Ver proyecto →</span>
+        </a>
+        <a class="card project-card" href="project-03.html">
+          <span class="card-tag">Proyecto 03</span>
+          <h3>Concepto de entorno</h3>
           <p>Más adelante puedes reemplazar estos bloques con imágenes reales.</p>
-        </article>
+          <span class="card-link">Ver proyecto →</span>
+        </a>
       </section>
     </main>
 
     <footer>
-      <p>© <span id="year"></span> Sebastián. Diseño 3D minimalista.</p>
+      <p>© <span id="year"></span> Sebastián. Diseño 3D.</p>
     </footer>
 
+    <!-- Script para actualizar el año automáticamente -->
     <script src="js/main.js"></script>
   </body>
 </html>
