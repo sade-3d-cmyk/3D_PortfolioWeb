@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio 3D – Sebastián</title>
-    <style>
-        body {
-            margin: 0;
-            background: #0e0e0e;
-            color: #e0e0e0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        h1 {
-            font-weight: 300;
-            letter-spacing: 2px;
-        }
-    </style>
-</head>
-<body>
-    <h1>Portfolio 3D – Próximamente</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio 3D | Sebastián</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">Sebastián</a>
+      <nav class="site-nav">
+        <a class="active" href="index.html">Inicio</a>
+        <a href="gallery.html">Galería</a>
+        <a href="about.html">Sobre mí</a>
+        <a href="contact.html">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Portfolio de diseño 3D</p>
+        <h1>Diseño visual sobrio, preciso y con presencia.</h1>
+        <p>Sitio minimalista para mostrar renders, procesos y una identidad clara como diseñador 3D.</p>
+
+        <div class="hero-actions">
+          <a class="button primary" href="gallery.html">Ver galería</a>
+          <a class="button" href="about.html">Conocer más</a>
+        </div>
+      </section>
+
+      <section class="grid">
+        <article class="card">
+          <h3>Portada</h3>
+          <p>Una bienvenida limpia que comunica tu propuesta visual de manera inmediata.</p>
+        </article>
+        <article class="card">
+          <h3>Galería</h3>
+          <p>Espacio para mostrar tus mejores piezas y organizar tus proyectos.</p>
+        </article>
+        <article class="card">
+          <h3>Sobre mí</h3>
+          <p>Cuenta tu historia, tus valores y tu acercamiento al diseño.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> Sebastián. Diseño 3D minimalista.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
 </html>
