@@ -21,10 +21,26 @@ body {
   min-height: 100vh;
   font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
   /* Fondo oscuro con degradado para dar sensación de profundidad */
-  background: radial-gradient(circle at top, #121722 0%, var(--bg) 45%, #04060a 100%);
+  background:
+    radial-gradient(circle at top, #121722 0%, var(--bg) 45%, #04060a 100%);
   color: var(--text);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -20%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(126, 200, 255, 0.14), transparent 30%),
+    radial-gradient(circle at 80% 30%, rgba(216, 179, 106, 0.12), transparent 28%),
+    radial-gradient(circle at 50% 90%, rgba(126, 200, 255, 0.08), transparent 32%);
+  filter: blur(30px);
+  animation: drift 18s ease-in-out infinite alternate;
+  pointer-events: none;
+  z-index: -1;
 }
 
 /* Quita el subrayado de los enlaces */
@@ -304,6 +320,15 @@ footer {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    transform: translate3d(3%, -2%, 0) scale(1.04);
   }
 }
 
